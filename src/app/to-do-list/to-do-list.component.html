@@ -1,0 +1,5 @@
+<ul>
+  <li *ngFor="let toDo of toDoList">
+    <app-to-do-item [toDo]="toDo" (toggle)="toggleCompletion(toDo.id)"></app-to-do-item>
+  </li>
+</ul>
